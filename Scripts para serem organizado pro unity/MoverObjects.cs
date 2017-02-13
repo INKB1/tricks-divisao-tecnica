@@ -1,0 +1,16 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class MoverObjects : MonoBehaviour {
+
+    public float speed;
+	// Use this for initialization
+	void Start () {
+	
+	}
+	
+	// Update is called once per frame
+	void Update () {
+        transform.Translate(Vector2.left * speed * Time.deltaTime);
+	}
+}
